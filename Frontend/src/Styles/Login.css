@@ -1,0 +1,248 @@
+/* Login Container - Matching home-root style */
+.otp-login-container {
+  min-height: 100vh;
+  background: #fcf8f8;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.otp-login-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+/* Login Card - Matching cafeteria-card style */
+.otp-login-card {
+  max-width: 480px;
+  width: 100%;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 24px 0 rgba(153, 77, 81, 0.08);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.otp-login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.otp-login-title {
+  color: #1b0e0e;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.015em;
+}
+
+.otp-login-subtitle {
+  color: #994d51;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.otp-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.otp-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.otp-label {
+  color: #1b0e0e;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #f3e7e8;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  transition: all 0.2s ease;
+  background: #fff;
+  color: #1b0e0e;
+  box-sizing: border-box;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #994d51;
+  box-shadow: 0 0 0 3px rgba(153, 77, 81, 0.1);
+}
+
+.otp-input-error {
+  border-color: #dc3545;
+}
+
+.otp-input-error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.otp-input:disabled {
+  background: #f8f9fa;
+  cursor: not-allowed;
+}
+
+.otp-error-text {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* Button Styles - Matching your design */
+.otp-button {
+  width: 100%;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.otp-get-button {
+  background: #1b0e0e;
+  color: #fff;
+}
+
+.otp-get-button:hover:not(:disabled) {
+  background: #2d1818;
+  transform: translateY(-1px);
+}
+
+.otp-get-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.otp-login-button {
+  background: #1b0e0e;
+  color: #fff;
+}
+
+.otp-login-button:hover:not(:disabled) {
+  background: #2d1818;
+  transform: translateY(-1px);
+}
+
+.otp-login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Back and Resend Buttons */
+.otp-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.otp-back-button {
+  flex: 1;
+  padding: 0.875rem;
+  background: #fff;
+  color: #1b0e0e;
+  border: 1px solid #f3e7e8;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.otp-back-button:hover:not(:disabled) {
+  background: #fcf8f8;
+  border-color: #994d51;
+}
+
+.otp-back-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.otp-resend-button {
+  background: none;
+  border: none;
+  color: #994d51;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.otp-resend-button:hover:not(:disabled) {
+  color: #1b0e0e;
+  text-decoration: underline;
+}
+
+.otp-resend-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.otp-timer-container {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.otp-timer-text {
+  color: #994d51;
+  font-size: 0.85rem;
+}
+
+/* Responsive Styles - Matching your home page */
+@media (max-width: 600px) {
+  .otp-login-card {
+    padding: 1.5rem;
+  }
+  
+  .otp-login-title {
+    font-size: 1.5rem;
+  }
+  
+  .otp-login-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .otp-actions {
+    flex-direction: column;
+  }
+  
+  .otp-button,
+  .otp-back-button {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .otp-login-wrapper {
+    padding: 1rem;
+  }
+  
+  .otp-login-card {
+    padding: 1.25rem;
+  }
+}
